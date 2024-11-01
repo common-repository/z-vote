@@ -1,0 +1,54 @@
+Manual for Z-Vote Version 1.1 Copyright 2010 140hours,LLC All rights reserved
+Released for WordPress Community through GPL License!
+
+- For Administrators
+
+-- Installing Z-Vote
+
+*) Upload the contents of zvote.zip to the /wp-content/plugins/zvote/ directory. The final path should be /wp-content/plugins/zvote/zvote.php
+*) Activate the plugin through the 'Plugins' menu in WordPress
+
+
+-- Adding a votable entry
+
+*) Create a post in WordPress
+*) Set the post category to "contest-entry"
+*) Your entries will now show the vote-buttons.
+
+
+-- Reseting votes for an entry
+
+*) Go to the WordPress admin interface
+*) In the Plugins-menu, click "Z-Vote".
+*) You're now presented with a list of votable entries and their votes.
+*) Click on "Reset Votes" for the entry you wish to reset.
+*) Confirm that you are about to reset the votes
+*) Your votes for this entry has now been reset
+
+
+-- Viewing votes for a specific entry
+
+*) Go to the WordPress admin interface
+*) In the Plugins-menu, click "Z-Vote".
+*) You're now presented with a list of votable entries and their votes.
+*) Click on the entry that you wish to view
+*) You will now be taken to a page which shows you when, which ip and which UserID (only version 1.5) that voted for the entry.
+*) Clicking "Go Back" will take you back to the list of entries.
+
+
+-- Changing the text output of the buttons
+
+*) To change the error-message please open zvote.php and find function zVote_showButton. Around line 326 you will see the text.
+*) To change the OK-message please open zvote.php and find function zVote_showButton. Around line 330 you will see the text.
+
+-- Changing the button
+
+*) To change the button you need to change the png in /wp-content/plugins/zvote/ named thumbup.png
+
+
+- For Users
+
+-- Voting for an Entry
+*) Go to the Entry-page in on the site
+*) Click the "Thumbs up"-icon.
+*) Your vote is now registered.
